@@ -64,7 +64,7 @@ describe("barajarCartas", () => {
     //arrange or given
     const arrayInicial: Carta[] = [cartas[0]];
     const resultadoEsperado = [{ idFoto: 1, imagen: "./src/img/bee.svg",estaVuelta: false,
-      encontrada: false, }];
+      encontrada: false, alt: "abeja" }];
     //act or when
     const resultado = barajarCartas(arrayInicial);
     //assert or then
