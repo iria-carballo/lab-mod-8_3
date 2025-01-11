@@ -71,12 +71,14 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  color: white;
+  background-color: slateblue;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: darkslateblue;
+  transition: 0.1s ease-in-out;
 }
 button:focus,
 button:focus-visible {
@@ -92,6 +94,51 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: slategrey;
   }
+}
+
+#contenedor-tablero {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 24px;
+}
+
+#intentos {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.parrafo {
+  max-width: 600px;
+}
+
+.cartas {
+  width: 168px;
+  height: 168px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cartas:hover {
+  box-shadow: 0 0 2px 0px #131e2d, 0 0 10px 5px #86b4ff;
+}
+
+.carta-img {
+  width: 168px;
+  height: 168px;
 }

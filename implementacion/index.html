@@ -3,12 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
   <body>
     <div id="app">
-      <h1>TypeScript Sandbox</h1>
+      <h1>Empareja y Gana</h1>
+      <section id="contenedor-juego">
+        <div id="intro">
+          <p class="parrafo">
+            ¡Pon a prueba tu memoria! Descubre las 12 cartas boca abajo,
+            buscando formar parejas idénticas. Si aciertas, las cartas se quedan
+            boca arriba y sigues jugando; si no, se ocultan de nuevo. Encuentra
+            todas las parejas para ganar. ¡Diviértete!
+          </p>
+          <button id="nueva-partida">Nueva partida</button>
+        </div>
+        <div id="contenedor">
+        <div id="contenedor-tablero"></div>
+      </section>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
